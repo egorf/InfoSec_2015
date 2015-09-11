@@ -1,0 +1,123 @@
+\documentclass[utf8x, 12pt]{G7-32} 
+
+
+% --------- -------- SETTINGS --------- --------
+
+% --------- Настройки стиля ГОСТ 7-32 --------
+
+% Гипертекстовое оглавление в PDF
+\usepackage[
+bookmarks=true, colorlinks=true, unicode=true,
+urlcolor=black,linkcolor=black, anchorcolor=black,
+citecolor=black, menucolor=black, filecolor=black,
+]{hyperref}
+
+\usepackage{graphicx}   % Пакет для включения рисунков
+\DeclareGraphicsExtensions{.jpg,.pdf,.png}
+\geometry{right=20mm}
+\geometry{left=30mm}
+\usepackage{enumerate}
+\setcounter{tocdepth}{3} % Подробность оглавления
+
+
+% --------- other settings --------
+\usepackage{MnSymbol}
+%\usepackage{simpsons}
+% --------- -------- SETTINGS --------- --------
+
+
+
+\begin{document}
+
+\frontmatter 
+
+% --------- -------- TITLE --------- --------
+
+\begin{center} 
+
+\large САНКТ-ПЕТЕРБУРГСИЙ ГОСУДАРСТВЕННЫЙ ПОЛИТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ
+
+\large Кафедра Компьютерных Систем и Программных Технологий \\[5.5cm] 
+
+\huge ОТЧЕТ \\[0.6cm] % название работы, затем отступ 0,6см
+\large по лабораторной работе №1\\
+\large Тема: <<Система вёрстки \TeX и расширения \LaTeX>>\\
+\large Дисциплина: <<Методы и средства защиты информации>>\\[3.7cm]
+
+\end{center} 
+
+\begin{flushright}
+Выполнил: студент гр. 53501/2 \\
+Федоров Е.М. \\[1.2cm]
+
+
+Преподаватель \\
+Вылегжанина К.Д.
+\end{flushright}
+
+
+\vfill 
+
+\begin{center} 
+\large Санкт-Петербург \\
+2015
+\end{center} 
+
+\thispagestyle{empty}
+
+
+% --------- -------- TITLE --------- --------
+
+\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\clearpage
+\mainmatter
+
+
+
+\chapter{Опыт работы с \TeX}
+
+До начала обучения по курсу защиты информации я никогда не пользовался ни редактором TexMaker, ни самим форматом \TeX . В основном я пользовался текстовым процессором MS Word, чьих возможностей по вёрстке текста для меня было более чем достатточно. \hfil\break
+В некоторых случаях для верстки текста я пользовался Adobe Illustrator.
+
+\chapter{Составление формул в \TeX}
+
+Составление больших формул в \TeX является сложной задачей, однако при работе с небольшими формулами очень удобно их редактировать и переносить.\hfil\break
+\begin{gather}
+A_x = -Hy \\
+A_y = A_z = 0
+\end{gather}
+\begin{eqnarray*}
+& \int(F_i x_k - F_k x_i)\,dV = & \\
+& \qquad=\oint(u_{il}x_k-u_{kl}x_i)\,df_l &
+\end{eqnarray*}
+
+
+
+\chapter{Положительные впечатления}
+
+\TeX мощный инструмент вёрстки, имеющий большое количество положительных моментов:
+
+\begin{enumerate}
+	\item  Хорошая переносимость документов.
+	\item Легкость в работе при использовании несложных формул.
+	\item Легкость в создании и использовании собственных стилей форматирования.
+	
+\end{enumerate}
+
+
+
+\chapter{Отрицательные впечатления}
+
+Также существуют некоторое количество отрицательных моментов: 
+\begin{enumerate}
+	\item Для того чтобы пользоваться \TeX необходимо освоить сложную систему комманд.
+	\item Большинство людей пользуются форматом doc, при необходимости редактирования Вашего файла другим человеком необходимо убедиться, что он в достаточной степени знаком с \TeX 
+	\item Отсутствие проверки пунктуации в фокументе.
+	
+
+\end{enumerate}
+
+
+\end{document}
